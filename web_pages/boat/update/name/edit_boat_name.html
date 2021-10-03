@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Name</title>
+    <link rel="stylesheet" href="../../../../common/bootstrap/css/bootstrap.min.css">
+
+    <!-- Favicons -->
+    <link href="../../../../common/assets/img/hydra-favicon.png" rel="icon">
+    <link href="../../../../common/assets/img/hydra-favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="../../../../common/assets/css/style.css" rel="stylesheet">
+
+    <script src="../../../../common/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../common/context-path-helper.js"></script>
+    <script src="../../../../common/utils.js"></script>
+    <script src="../../../../common/popup_edit_utils.js"></script>
+    <script src="../edit_boat_shared.js"></script>
+    <script src="edit_boat_name.js"></script>
+</head>
+<body>
+<div class="container p-3 mt-5">
+    <h2 id="editHeader">Edit Name For $BOAT</h2><br/>
+    <form id="updateDataForm" action="../../updateBoat" method="post">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <label for="inputField" class="form-label">Name</label>
+                <input class="form-control" type="text" id="inputField" name="boatName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 mt-1">
+                <button id="editBtn" type="submit" class="btn btn-primary">Save Changes</button>
+                <button id="closeBtn" type="button" class="btn btn-secondary"
+                        onclick="window.close();">Close
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div id="responseMsg" class="alert-light p-2 mt-2" role="alert"></div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

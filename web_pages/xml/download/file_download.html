@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Download XML</title>
+
+    <!-- Favicons -->
+    <link href="../../../common/assets/img/hydra-favicon.png" rel="icon">
+    <link href="../../../common/assets/img/hydra-favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../../../common/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../../common/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Common CSS -->
+    <link href="../../../common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../common/multiple-select-js-master/dist/css/multiple-select.css">
+    <!-- Template Main CSS File -->
+    <link href="../../../common/assets/css/style.css" rel="stylesheet">
+    <!-- Vendor JS Files -->
+    <script src="../../../common/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../common/context-path-helper.js"></script>
+    <script src="../../../common/utils.js"></script>
+    <script src="../../member/member_shared.js"></script>
+    <script src="file_download.js"></script>
+</head>
+<body class="innerPageBackground">
+<header id="header" class="fixed-top d-flex align-items-center">
+</header>
+<br/><br/>
+<div class="container p-3 mt-md-5 bg-light rounded">
+    <div class="d-flex justify-content-center">
+        <div class="row col-lg-6 col-12">
+            <h3 class="justify-content-center">Xml File Download</h3>
+            <form id="downloadForm" action="../../download" method="POST">
+                <div><label class="form-label" for="xmlType">Xml Type:</label>
+                    <select class="form-select form-control" id="xmlType" name="xmlType" required>
+                        <option value="MEMBERS">Members</option>
+                        <option value="BOATS">Boats</option>
+                        <option value="ACTIVITIES">Activities</option>
+                    </select>
+                </div>
+                <div><input class="btn btn-primary mb-2 mt-2" type="Submit" value="Download File"></div>
+            </form>
+
+            <div>
+                <Label class="form-label" for="xmlText">Xml:</Label><br/>
+                <textarea id="xmlText" name="xmlText" rows="30" cols="70"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../common/assets/vendor/aos/aos.js"></script>
+<script src="../../navbar/navbar.js"></script>
+<script src="../../notification/notifications.js"></script>
+</body>
+</html>

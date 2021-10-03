@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <h1 class="text-light"><a href="#" class="clickable-link"
+                                      data-href="web_pages/home/manager_home.html"><span>Hydra</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#"> <i id="notificationBell" class="bi bi-bell">
+                        <span id="notificationCount" class="badge badge-primary bg-dark"></span> </i></a>
+                    <ul id="notifications" class="dropdown-menu border-secondary overflow-auto"
+                        style="min-height: 50px; max-height: 300px"
+                        aria-labelledby="navbarDropdownMenuLink">
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Xml</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/xml/upload/file_upload.html">Upload
+                            Xml</a></li>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/xml/download/file_download.html">Download
+                            Xml</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Items</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span>Members</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/member/add_member.html">Add
+                                    Member</a></li>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/member/manage_members.html">Manage
+                                    Members</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Boats</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/boat/add_boat.html">Add
+                                    Boat</a></li>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/boat/manage_boats.html">Manage
+                                    Boats</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Activities</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/activity/add_activity.html">Add
+                                    Activity</a></li>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/activity/manage_activities.html">Manage Activities</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Requests</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/request/add_request.html">Add
+                            Request</a></li>
+                        <li><a href="#" class="clickable-link"
+                               data-href="web_pages/request/manage_requests.html?includeApproved=true">Manage
+                            Requests</a></li>
+                        <li class="dropdown"><a href="#"><span>Show Requests</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/request/manage_requests.html?includeApproved=true&fromTodayPlusX=0&toTodayPlusX=7">Future
+                                    Week Requests</a></li>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/request/manage_requests.html?includeApproved=false&fromTodayPlusX=0&toTodayPlusX=7">Future
+                                    Week Open Requests</a></li>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/request/manage_requests.html?includeApproved=true&fromTodayPlusX=0&toTodayPlusX=0">Daily
+                                    Requests</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Request Operations</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/request/duplicate_request.html">Duplicate Request</a></li>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/request/transfer_members.html">Transfer Members</a></li>
+                                <li><a href="#" class="clickable-link" data-href="web_pages/request/split_request.html">Split
+                                    Request</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Assignments</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/assignment/add_assignment.html">Add
+                            Assignment</a></li>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/assignment/manage_assignments.html">Manage
+                            Assignments</a></li>
+                        <li class="dropdown"><a href="#"><span>Show Assignments</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/assignment/manage_assignments.html?fromTodayPlusX=0&toTodayPlusX=7">Weekly
+                                    Assignments</a></li>
+                                <li><a href="#" class="clickable-link"
+                                       data-href="web_pages/assignment/manage_assignments.html?fromTodayPlusX=0&toTodayPlusX=0">Daily
+                                    Assignments</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Notifications</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/notification/add_notification.html">Add
+                            Notification</a></li>
+                        <li><a href="#" class="clickable-link"
+                               data-href="web_pages/notification/manage_notifications.html">Manage Notifications</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="getstarted" id="logoutLink" href="#">Logout</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</div>

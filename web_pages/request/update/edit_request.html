@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Edit Request</title>
+    <!-- Favicons -->
+    <link href="../../../common/assets/img/hydra-favicon.png" rel="icon">
+    <link href="../../../common/assets/img/hydra-favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../../../common/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../../common/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Common CSS -->
+    <link href="../../../common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../common/multiple-select-js-master/dist/css/multiple-select.css">
+    <!-- Template Main CSS File -->
+    <link href="../../../common/assets/css/style.css" rel="stylesheet">
+    <!-- Vendor JS Files -->
+    <script src="../../../common/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../common/multiple-select-js-master/dist/js/multiple-select.js"></script>
+    <script src="../../../common/multi_select_utils.js"></script>
+    <script src="../../../common/context-path-helper.js"></script>
+    <script src="../../../common/utils.js"></script>
+    <script src="../../../common/popup_edit_utils.js"></script>
+    <script src="../../member/member_shared.js"></script>
+    <script src="../request_shared.js"></script>
+    <script src="edit_request.js"></script>
+</head>
+<body class="innerPageBackground">
+<header id="header" class="fixed-top d-flex align-items-center">
+</header>
+<br/><br/>
+<div class="container p-3 mt-md-5 bg-light rounded">
+    <h2 class="mt-3 text-center">Edit Request</h2>
+    <div class="row mt-2">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="requestId" class="form-label">Request ID *</label>
+            <input type="text" id="requestId" class="form-control" name="requestId" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="isApproved" class="form-label">Approved *</label>
+            <input type="text" id="isApproved" class="form-control" name="isApproved" disabled>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="mainMember" class="form-label">Main Member *</label>
+            <div class="d-flex">
+                <button id="editMainMemberBtn" type="button" class="btn btn-primary edit-btn"
+                        data-big-window data-href="main_member/edit_request_member.html">Edit
+                </button>
+                <input type="text" id="mainMember" class="form-control mx-1" name="mainMember" disabled>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="requestDate" class="form-label">Request Date *</label>
+            <div class="d-flex">
+                <button id="editDateBtn" type="button" class="btn btn-primary edit-btn"
+                        data-href="date/edit_request_date.html">Edit
+                </button>
+                <input type="text" id="requestDate" class="form-control mx-1" name="requestDate" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="boatTypes" class="form-label">Boat Types *</label>
+            <div class="d-flex">
+                <button id="editBoatTypesBtn" type="button" class="btn btn-primary edit-btn"
+                        data-big-window data-href="boat_types/edit_request_boat_types.html">Edit
+                </button>
+                <select class="form-select form-control mx-1" id="boatTypes" name="boatTypes" size="1" disabled>
+                    <option id="boatTypesPlaceHolder" value="" disabled selected></option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="times" class="form-label">Activity *</label>
+            <div class="d-flex">
+                <button id="editTimesBtn" type="button" class="btn btn-primary edit-btn"
+                        data-big-window data-href="times/edit_request_times.html">Edit
+                </button>
+                <input type="text" id="times" class="form-control mx-1" name="times" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="additionalMembers" class="form-label">Additional Members</label>
+            <div class="d-flex">
+                <button id="editAdditionalMembersBtn" type="button" class="btn btn-primary edit-btn"
+                        data-big-window data-href="members/edit_request_members.html">Edit
+                </button>
+                <select class="form-select form-control mx-1" id="additionalMembers"
+                        name="additionalMembers" size="1" disabled>
+                    <option id="membersPlaceHolder" value="" disabled selected></option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="coxswain" class="form-label">Coxswain</label>
+            <div class="d-flex">
+                <button id="editCoxswainBtn" type="button" class="btn btn-primary edit-btn"
+                        data-big-window data-href="coxswain/edit_request_coxswain.html">Edit
+                </button>
+                <input type="text" id="coxswain" class="form-control mx-1" name="coxswain" disabled>
+            </div>
+        </div>
+    </div>
+    <div id="error" class="alert-light p-2 mt-2" role="alert"></div>
+</div>
+<script src="../../../common/assets/vendor/aos/aos.js"></script>
+<script src="../../navbar/navbar.js"></script>
+<script src="../../notification/notifications.js"></script>
+</body>
+</html>

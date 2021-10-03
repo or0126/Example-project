@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <h1 class="text-light"><a href="#" class="clickable-link" data-href="web_pages/home/user_home.html"><span>Hydra</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#"> <i id="notificationBell" class="bi bi-bell">
+                        <span id="notificationCount" class="badge badge-primary bg-dark"></span> </i></a>
+                    <ul id="notifications" class="dropdown-menu overflow-auto"
+                        style="min-height: 50px; max-height: 300px"
+                        aria-labelledby="navbarDropdownMenuLink">
+                    </ul>
+                </li>
+                <li><a href="#" class="clickable-link" data-href="web_pages/member/member_info.html">My Info</a></li>
+                <li class="dropdown"><a href="#"><span>Requests</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/request/add_request.html">Add
+                            Request</a></li>
+                        <li><a href="#" class="clickable-link"
+                               data-href="web_pages/request/manage_requests.html?fromTodayPlusX=0&includeApproved=true">Future
+                            Requests</a></li>
+                        <li><a href="#" class="clickable-link"
+                               data-href="web_pages/request/manage_requests.html?fromTodayPlusX=-7&toTodayPlusX=0&includeApproved=true">Past
+                            Week Requests</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Assignments</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="clickable-link"
+                               data-href="web_pages/assignment/manage_assignments.html?toTodayPlusX=0">My Past
+                            Assignments</a></li>
+                        <li><a href="#" class="clickable-link" data-href="web_pages/assignment/manage_assignments.html">All
+                            My Assignments</a></li>
+                    </ul>
+                </li>
+                <li><a class="getstarted" id="logoutLink" href="#">Logout</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</div>

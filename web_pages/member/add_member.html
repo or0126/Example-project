@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Add Member</title>
+    <!-- Favicons -->
+    <link href="../../common/assets/img/hydra-favicon.png" rel="icon">
+    <link href="../../common/assets/img/hydra-favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../../common/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../common/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Common CSS -->
+    <link href="../../common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../common/multiple-select-js-master/dist/css/multiple-select.css">
+    <!-- Template Main CSS File -->
+    <link href="../../common/assets/css/style.css" rel="stylesheet">
+    <!-- Script Files -->
+    <script src="../../common/bootstrap/js/bootstrap.js"></script>
+    <script src="../../common/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../common/multiple-select-js-master/dist/js/multiple-select.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="../../common/utils.js"></script>
+    <script src="../member/member_shared.js"></script>
+    <script src="../boat/boat_shared.js"></script>
+    <script src="add_member.js"></script>
+</head>
+<body class="innerPageBackground">
+<header id="header" class="fixed-top d-flex align-items-center">
+</header>
+<br/><br/>
+<div class="container p-3 mt-md-5 bg-light rounded">
+    <h2 class="mt-3 text-center">Add Member</h2>
+    <form id="addMemberForm" action="../../addMember" method="post">
+        <div class="row mt-2">
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="memberId" class="form-label">Member ID *</label>
+                <input type="text" id="memberId" class="form-control" name="memberId" required>
+            </div>
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="memberName" class="form-label">Member Name *</label>
+                <input type="text" id="memberName" class="form-control" name="memberName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="memberType" class="form-label">Member Type *</label>
+                <select class="form-select form-control" id="memberType" name="memberType" required>
+                    <option value="USER">User</option>
+                    <option value="MANAGER">Manager</option>
+                </select>
+            </div>
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="phone" class="form-label">Phone *</label>
+                <input class="form-control" type="tel" pattern="^0\d([\d]{0,1})([-]{0,1})\d{7}$" id="phone"
+                       placeholder="054-1234567" name="phone" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="email" class="form-label">Email *</label>
+                <input class="form-control" type="email" id="email" name="email" required>
+            </div>
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="password" class="form-label">Password *</label>
+                <input type="password" id="password" class="form-control" name="password" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="age" class="form-label">Age</label>
+                <input class="form-control" type="text" id="age" name="age">
+            </div>
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="comments" class="form-label">Comments</label>
+                <input class="form-control" type="text" id="comments" name="comments">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 mt-3">
+                <label for="boatId" class="form-label">Private Boat ID</label>
+                <select id="boatId" class="form-select" name="boatId">
+                    <option value="">None</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="form-check-inline"><label>Level:</label></div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" id="beginner"
+                           value="BEGINNER" checked required>
+                    <label class="form-check-label" for="beginner">
+                        Beginner
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" id="intermediate"
+                           value="INTERMEDIATE">
+                    <label class="form-check-label" for="intermediate">
+                        Intermediate
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experience" id="advanced"
+                           value="ADVANCED">
+                    <label class="form-check-label" for="advanced">
+                        Advanced
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <div></div>
+            <input type="submit" class="btn btn-primary" value="Add Member">
+        </div>
+        <div id="error" class="alert-light p-2 mt-2" role="alert"></div>
+        <div class="mb-5"></div>
+    </form>
+</div>
+<script src="../../common/assets/vendor/aos/aos.js"></script>
+<script src="../navbar/navbar.js"></script>
+<script src="../notification/notifications.js"></script>
+</body>
+</html>

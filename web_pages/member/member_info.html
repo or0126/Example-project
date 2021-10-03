@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Manage My Info</title>
+    <!-- Favicons -->
+    <link href="../../common/assets/img/hydra-favicon.png" rel="icon">
+    <link href="../../common/assets/img/hydra-favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../../common/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../common/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Common CSS -->
+    <link href="../../common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../common/multiple-select-js-master/dist/css/multiple-select.css">
+    <!-- Template Main CSS File -->
+    <link href="../../common/assets/css/style.css" rel="stylesheet">
+    <!-- Vendor JS Files -->
+    <script src="../../common/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Files -->
+    <script src="../../common/bootstrap/js/bootstrap.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="../../common/utils.js"></script>
+    <script src="../../common/popup_edit_utils.js"></script>
+    <script src="member_shared.js"></script>
+    <script src="update/edit_member_shared.js"></script>
+    <script src="update/edit_member.js"></script>
+</head>
+
+<body class="innerPageBackground">
+<header id="header" class="fixed-top d-flex align-items-center">
+</header>
+<br/><br/>
+<div class="container p-3 mt-md-5 bg-light rounded">
+    <h2 class="mt-3 text-center">Manage My Info</h2>
+    <div class="row mt-2">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="memberId" class="form-label">Member ID *</label>
+            <input type="text" id="memberId" class="form-control" name="memberId" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="memberName" class="form-label">Member Name *</label>
+            <div class="d-flex">
+                <button id="editNameBtn" type="button" class="btn btn-primary edit-btn"
+                        data-href="update/name/edit_member_name.html">Edit
+                </button>
+                <input type="text" id="memberName" class="form-control mx-1" name="memberName" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="memberType" class="form-label">Member Type *</label>
+            <input class="form-control" type="text" id="memberType" name="memberType" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <div class="d-flex">
+                <button id="editPhoneBtn" type="button" class="btn btn-primary edit-btn"
+                        data-href="update/phone/edit_member_phone.html">Edit
+                </button>
+                <input class="form-control mx-1" type="tel" pattern="^0\d([\d]{0,1})([-]{0,1})\d{7}$" id="phone"
+                       name="phone" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="email" class="form-label">Email *</label>
+            <div class="d-flex">
+                <button id="editEmailBtn" type="button" class="btn btn-primary edit-btn"
+                        data-href="update/email/edit_member_email.html">Edit
+                </button>
+                <input type="email" id="email"  class="form-control mx-1" name="email" disabled>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="password" class="form-label">Password *</label>
+            <div class="d-flex">
+                <button id="editPasswordBtn" type="button" class="btn btn-primary edit-btn"
+                        data-href="update/password/edit_member_password.html">Edit
+                </button>
+                <input type="password" id="password" class="form-control mx-1" name="password" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="joinDate">Join Date *</label>
+            <input id="joinDate" class="form-control" type="text" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="expirationDate">Expiration Date</label>
+            <input id="expirationDate" class="form-control" type="text" disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="age" class="form-label">Age</label>
+            <input class="form-control" type="text" id="age" name="age" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="comments" class="form-label">Comments</label>
+            <input class="form-control" type="text" id="comments" name="comments" disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-4">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="hasBoat" name="hasBoat" disabled>
+                <label class="form-check-label" for="hasBoat">Has Boat?</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="privateBoatId" class="form-label">Private Boat ID</label>
+            <input class="form-control" type="text" id="privateBoatId" name="privateBoatId" disabled>
+        </div>
+        <div class="col-lg-6 col-12 mt-3">
+            <label for="experience" class="form-label">Experience *</label>
+            <input class="form-control" type="text" id="experience" name="experience" disabled>
+        </div>
+    </div>
+</div>
+<script src="../../common/assets/vendor/aos/aos.js"></script>
+<script src="../navbar/navbar.js"></script>
+<script src="../notification/notifications.js"></script>
+</body>
+</html>
