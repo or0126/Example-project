@@ -7,4 +7,6 @@ for user experience log in with Email: DemoUser@gmail.com Password: demo123
 
 for manager experience log in with Email: DemoAdmin@gmail.com Password: demo123
 
+this git layed out like a wart file, i made an additional git for developer layout: https://github.com/or0126/hydra-boat-club 
+
 !!!!! PLEASE LOG OUT, NO AUTOMATIC LOGOUT WAS IMPLEMENTED IN THIS DEMO !!!!!
