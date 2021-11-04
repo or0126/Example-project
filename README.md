@@ -1,7 +1,7 @@
 # HYDRA Boat club
 A demostration website of some of my backend and frontend abilities with java, javascript, css and more...
 
-the site is up and running: http://hydraboatclub.tk
+the site is up and running: http://hydraboatclub.tk  (deployed with aws elastic beanstalk on tomcat server)
 
 for user experience log in with Email: DemoUser@gmail.com Password: demo123
 
